@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58013E341B1EFE5B007EC8BE /* UIView+TXSAnimations.h in Headers */ = {isa = PBXBuildFile; fileRef = 58013E321B1EFE5B007EC8BE /* UIView+TXSAnimations.h */; };
+		58013E351B1EFE5B007EC8BE /* UIView+TXSAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 58013E331B1EFE5B007EC8BE /* UIView+TXSAnimations.m */; };
+		581C3E321B259F890041774E /* TXSNetConnectionUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 581C3E301B259F890041774E /* TXSNetConnectionUtils.h */; };
+		581C3E331B259F890041774E /* TXSNetConnectionUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 581C3E311B259F890041774E /* TXSNetConnectionUtils.m */; };
+		581C3E3A1B2690560041774E /* TXSUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 581C3E381B2690560041774E /* TXSUtils.h */; };
+		581C3E3B1B2690560041774E /* TXSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 581C3E391B2690560041774E /* TXSUtils.m */; };
+		5865F4741B26CC6F00992FA0 /* TXSADInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5865F4721B26CC6F00992FA0 /* TXSADInfo.h */; };
+		5865F4751B26CC6F00992FA0 /* TXSADInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5865F4731B26CC6F00992FA0 /* TXSADInfo.m */; };
+		587CEDFA1B1D7951008B3ACE /* TXPlaySDKForIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 587CEDF91B1D7951008B3ACE /* TXPlaySDKForIOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		587CEE071B1D7951008B3ACE /* TXPlaySDKForIOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 587CEE061B1D7951008B3ACE /* TXPlaySDKForIOSTests.m */; };
+		587CEE231B1DC07F008B3ACE /* TXSAnimationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 587CEE211B1DC07F008B3ACE /* TXSAnimationFactory.h */; };
+		587CEE241B1DC07F008B3ACE /* TXSAnimationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 587CEE221B1DC07F008B3ACE /* TXSAnimationFactory.m */; };
+		588FAC181B2E830E001B5202 /* TXSADView.h in Headers */ = {isa = PBXBuildFile; fileRef = 588FAC161B2E830E001B5202 /* TXSADView.h */; };
+		588FAC191B2E830E001B5202 /* TXSADView.m in Sources */ = {isa = PBXBuildFile; fileRef = 588FAC171B2E830E001B5202 /* TXSADView.m */; };
+		589A9CDD1B28142500D72815 /* TXSLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 589A9CDB1B28142500D72815 /* TXSLoader.h */; };
+		589A9CDE1B28142500D72815 /* TXSLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A9CDC1B28142500D72815 /* TXSLoader.m */; };
+		589A9CF21B2AA6AF00D72815 /* TXPlaySDKManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 589A9CF01B2AA6AF00D72815 /* TXPlaySDKManager.h */; };
+		589A9CF31B2AA6AF00D72815 /* TXPlaySDKManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A9CF11B2AA6AF00D72815 /* TXPlaySDKManager.m */; };
+		589A9CFC1B2AB51900D72815 /* TXSADInfoDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 589A9CFA1B2AB51800D72815 /* TXSADInfoDelegate.h */; };
+		589A9CFD1B2AB51900D72815 /* TXSADInfoDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A9CFB1B2AB51800D72815 /* TXSADInfoDelegate.m */; };
+		58FEF7A31B2EDAE00007B77E /* TXSADViewEx.h in Headers */ = {isa = PBXBuildFile; fileRef = 58FEF7A11B2EDAE00007B77E /* TXSADViewEx.h */; };
+		58FEF7A41B2EDAE00007B77E /* TXSADViewEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FEF7A21B2EDAE00007B77E /* TXSADViewEx.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		587CEE011B1D7951008B3ACE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 587CEDEB1B1D7951008B3ACE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 587CEDF31B1D7951008B3ACE;
+			remoteInfo = TXPlaySDKForIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		58013E321B1EFE5B007EC8BE /* UIView+TXSAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TXSAnimations.h"; sourceTree = "<group>"; };
+		58013E331B1EFE5B007EC8BE /* UIView+TXSAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TXSAnimations.m"; sourceTree = "<group>"; };
+		581C3E301B259F890041774E /* TXSNetConnectionUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXSNetConnectionUtils.h; sourceTree = "<group>"; wrapsLines = 0; };
+		581C3E311B259F890041774E /* TXSNetConnectionUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXSNetConnectionUtils.m; sourceTree = "<group>"; };
+		581C3E381B2690560041774E /* TXSUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXSUtils.h; sourceTree = "<group>"; };
+		581C3E391B2690560041774E /* TXSUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXSUtils.m; sourceTree = "<group>"; };
+		5865F4721B26CC6F00992FA0 /* TXSADInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXSADInfo.h; sourceTree = "<group>"; };
+		5865F4731B26CC6F00992FA0 /* TXSADInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXSADInfo.m; sourceTree = "<group>"; };
+		587CEDF41B1D7951008B3ACE /* TXPlaySDKForIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TXPlaySDKForIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		587CEDF81B1D7951008B3ACE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		587CEDF91B1D7951008B3ACE /* TXPlaySDKForIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TXPlaySDKForIOS.h; sourceTree = "<group>"; };
+		587CEDFF1B1D7951008B3ACE /* TXPlaySDKForIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TXPlaySDKForIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		587CEE051B1D7951008B3ACE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		587CEE061B1D7951008B3ACE /* TXPlaySDKForIOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXPlaySDKForIOSTests.m; sourceTree = "<group>"; };
+		587CEE211B1DC07F008B3ACE /* TXSAnimationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXSAnimationFactory.h; sourceTree = "<group>"; };
+		587CEE221B1DC07F008B3ACE /* TXSAnimationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXSAnimationFactory.m; sourceTree = "<group>"; };
+		588FAC161B2E830E001B5202 /* TXSADView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXSADView.h; sourceTree = "<group>"; };
+		588FAC171B2E830E001B5202 /* TXSADView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXSADView.m; sourceTree = "<group>"; };
+		589A9CDB1B28142500D72815 /* TXSLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXSLoader.h; sourceTree = "<group>"; };
+		589A9CDC1B28142500D72815 /* TXSLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXSLoader.m; sourceTree = "<group>"; };
+		589A9CF01B2AA6AF00D72815 /* TXPlaySDKManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXPlaySDKManager.h; sourceTree = "<group>"; };
+		589A9CF11B2AA6AF00D72815 /* TXPlaySDKManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXPlaySDKManager.m; sourceTree = "<group>"; };
+		589A9CFA1B2AB51800D72815 /* TXSADInfoDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXSADInfoDelegate.h; sourceTree = "<group>"; };
+		589A9CFB1B2AB51800D72815 /* TXSADInfoDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXSADInfoDelegate.m; sourceTree = "<group>"; };
+		58FEF7A11B2EDAE00007B77E /* TXSADViewEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXSADViewEx.h; sourceTree = "<group>"; };
+		58FEF7A21B2EDAE00007B77E /* TXSADViewEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXSADViewEx.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		587CEDF01B1D7951008B3ACE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		587CEDFC1B1D7951008B3ACE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		587CEDEA1B1D7951008B3ACE = {
+			isa = PBXGroup;
+			children = (
+				587CEDF61B1D7951008B3ACE /* TXPlaySDKForIOS */,
+				587CEE031B1D7951008B3ACE /* TXPlaySDKForIOSTests */,
+				587CEDF51B1D7951008B3ACE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		587CEDF51B1D7951008B3ACE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				587CEDF41B1D7951008B3ACE /* TXPlaySDKForIOS.framework */,
+				587CEDFF1B1D7951008B3ACE /* TXPlaySDKForIOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		587CEDF61B1D7951008B3ACE /* TXPlaySDKForIOS */ = {
+			isa = PBXGroup;
+			children = (
+				587CEDF91B1D7951008B3ACE /* TXPlaySDKForIOS.h */,
+				589A9CF01B2AA6AF00D72815 /* TXPlaySDKManager.h */,
+				589A9CF11B2AA6AF00D72815 /* TXPlaySDKManager.m */,
+				589A9CFF1B2AC17E00D72815 /* animation */,
+				589A9CFE1B2AC0C100D72815 /* info */,
+				587CEDF71B1D7951008B3ACE /* Supporting Files */,
+				589A9D0D1B2AC57A00D72815 /* utils */,
+				589A9D001B2AC2DC00D72815 /* view */,
+			);
+			name = TXPlaySDKForIOS;
+			path = src;
+			sourceTree = "<group>";
+		};
+		587CEDF71B1D7951008B3ACE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				587CEDF81B1D7951008B3ACE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		587CEE031B1D7951008B3ACE /* TXPlaySDKForIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				587CEE061B1D7951008B3ACE /* TXPlaySDKForIOSTests.m */,
+				587CEE041B1D7951008B3ACE /* Supporting Files */,
+			);
+			name = TXPlaySDKForIOSTests;
+			path = tests;
+			sourceTree = "<group>";
+		};
+		587CEE041B1D7951008B3ACE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				587CEE051B1D7951008B3ACE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		589A9CFE1B2AC0C100D72815 /* info */ = {
+			isa = PBXGroup;
+			children = (
+				5865F4721B26CC6F00992FA0 /* TXSADInfo.h */,
+				5865F4731B26CC6F00992FA0 /* TXSADInfo.m */,
+				589A9CFA1B2AB51800D72815 /* TXSADInfoDelegate.h */,
+				589A9CFB1B2AB51800D72815 /* TXSADInfoDelegate.m */,
+			);
+			name = info;
+			sourceTree = "<group>";
+		};
+		589A9CFF1B2AC17E00D72815 /* animation */ = {
+			isa = PBXGroup;
+			children = (
+				587CEE211B1DC07F008B3ACE /* TXSAnimationFactory.h */,
+				587CEE221B1DC07F008B3ACE /* TXSAnimationFactory.m */,
+				58013E321B1EFE5B007EC8BE /* UIView+TXSAnimations.h */,
+				58013E331B1EFE5B007EC8BE /* UIView+TXSAnimations.m */,
+			);
+			name = animation;
+			sourceTree = "<group>";
+		};
+		589A9D001B2AC2DC00D72815 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				58FEF7A11B2EDAE00007B77E /* TXSADViewEx.h */,
+				58FEF7A21B2EDAE00007B77E /* TXSADViewEx.m */,
+				588FAC161B2E830E001B5202 /* TXSADView.h */,
+				588FAC171B2E830E001B5202 /* TXSADView.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		589A9D0D1B2AC57A00D72815 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				589A9CDB1B28142500D72815 /* TXSLoader.h */,
+				581C3E301B259F890041774E /* TXSNetConnectionUtils.h */,
+				581C3E381B2690560041774E /* TXSUtils.h */,
+				589A9CDC1B28142500D72815 /* TXSLoader.m */,
+				581C3E311B259F890041774E /* TXSNetConnectionUtils.m */,
+				581C3E391B2690560041774E /* TXSUtils.m */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		587CEDF11B1D7951008B3ACE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				581C3E3A1B2690560041774E /* TXSUtils.h in Headers */,
+				587CEE231B1DC07F008B3ACE /* TXSAnimationFactory.h in Headers */,
+				589A9CDD1B28142500D72815 /* TXSLoader.h in Headers */,
+				5865F4741B26CC6F00992FA0 /* TXSADInfo.h in Headers */,
+				588FAC181B2E830E001B5202 /* TXSADView.h in Headers */,
+				589A9CF21B2AA6AF00D72815 /* TXPlaySDKManager.h in Headers */,
+				581C3E321B259F890041774E /* TXSNetConnectionUtils.h in Headers */,
+				58013E341B1EFE5B007EC8BE /* UIView+TXSAnimations.h in Headers */,
+				58FEF7A31B2EDAE00007B77E /* TXSADViewEx.h in Headers */,
+				589A9CFC1B2AB51900D72815 /* TXSADInfoDelegate.h in Headers */,
+				587CEDFA1B1D7951008B3ACE /* TXPlaySDKForIOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		587CEDF31B1D7951008B3ACE /* TXPlaySDKForIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 587CEE0A1B1D7951008B3ACE /* Build configuration list for PBXNativeTarget "TXPlaySDKForIOS" */;
+			buildPhases = (
+				587CEDEF1B1D7951008B3ACE /* Sources */,
+				587CEDF01B1D7951008B3ACE /* Frameworks */,
+				587CEDF11B1D7951008B3ACE /* Headers */,
+				587CEDF21B1D7951008B3ACE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TXPlaySDKForIOS;
+			productName = TXPlaySDKForIOS;
+			productReference = 587CEDF41B1D7951008B3ACE /* TXPlaySDKForIOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		587CEDFE1B1D7951008B3ACE /* TXPlaySDKForIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 587CEE0D1B1D7951008B3ACE /* Build configuration list for PBXNativeTarget "TXPlaySDKForIOSTests" */;
+			buildPhases = (
+				587CEDFB1B1D7951008B3ACE /* Sources */,
+				587CEDFC1B1D7951008B3ACE /* Frameworks */,
+				587CEDFD1B1D7951008B3ACE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				587CEE021B1D7951008B3ACE /* PBXTargetDependency */,
+			);
+			name = TXPlaySDKForIOSTests;
+			productName = TXPlaySDKForIOSTests;
+			productReference = 587CEDFF1B1D7951008B3ACE /* TXPlaySDKForIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		587CEDEB1B1D7951008B3ACE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = xingQian;
+				TargetAttributes = {
+					587CEDF31B1D7951008B3ACE = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					587CEDFE1B1D7951008B3ACE = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = 587CEDEE1B1D7951008B3ACE /* Build configuration list for PBXProject "TXPlaySDKForIOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 587CEDEA1B1D7951008B3ACE;
+			productRefGroup = 587CEDF51B1D7951008B3ACE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				587CEDF31B1D7951008B3ACE /* TXPlaySDKForIOS */,
+				587CEDFE1B1D7951008B3ACE /* TXPlaySDKForIOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		587CEDF21B1D7951008B3ACE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		587CEDFD1B1D7951008B3ACE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		587CEDEF1B1D7951008B3ACE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				589A9CDE1B28142500D72815 /* TXSLoader.m in Sources */,
+				581C3E3B1B2690560041774E /* TXSUtils.m in Sources */,
+				58013E351B1EFE5B007EC8BE /* UIView+TXSAnimations.m in Sources */,
+				589A9CFD1B2AB51900D72815 /* TXSADInfoDelegate.m in Sources */,
+				588FAC191B2E830E001B5202 /* TXSADView.m in Sources */,
+				589A9CF31B2AA6AF00D72815 /* TXPlaySDKManager.m in Sources */,
+				58FEF7A41B2EDAE00007B77E /* TXSADViewEx.m in Sources */,
+				587CEE241B1DC07F008B3ACE /* TXSAnimationFactory.m in Sources */,
+				5865F4751B26CC6F00992FA0 /* TXSADInfo.m in Sources */,
+				581C3E331B259F890041774E /* TXSNetConnectionUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		587CEDFB1B1D7951008B3ACE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				587CEE071B1D7951008B3ACE /* TXPlaySDKForIOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		587CEE021B1D7951008B3ACE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 587CEDF31B1D7951008B3ACE /* TXPlaySDKForIOS */;
+			targetProxy = 587CEE011B1D7951008B3ACE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		587CEE081B1D7951008B3ACE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		587CEE091B1D7951008B3ACE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		587CEE0B1B1D7951008B3ACE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = src/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		587CEE0C1B1D7951008B3ACE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = src/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		587CEE0E1B1D7951008B3ACE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		587CEE0F1B1D7951008B3ACE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		587CEDEE1B1D7951008B3ACE /* Build configuration list for PBXProject "TXPlaySDKForIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				587CEE081B1D7951008B3ACE /* Debug */,
+				587CEE091B1D7951008B3ACE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		587CEE0A1B1D7951008B3ACE /* Build configuration list for PBXNativeTarget "TXPlaySDKForIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				587CEE0B1B1D7951008B3ACE /* Debug */,
+				587CEE0C1B1D7951008B3ACE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		587CEE0D1B1D7951008B3ACE /* Build configuration list for PBXNativeTarget "TXPlaySDKForIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				587CEE0E1B1D7951008B3ACE /* Debug */,
+				587CEE0F1B1D7951008B3ACE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 587CEDEB1B1D7951008B3ACE /* Project object */;
+}
