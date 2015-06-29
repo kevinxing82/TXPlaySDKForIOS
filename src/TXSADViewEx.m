@@ -36,10 +36,8 @@
 
 @interface TXSADViewEx()
 
-@property(nonatomic,retain) TXSADView* adView;
 @property(nonatomic,copy) TXSADViewBlock dismissedBlock;
 @property(nonatomic,copy) TXSADViewBlock customDismissedBlock;
-
 @property(nonatomic,retain)NSMutableDictionary* pageContent;
 
 @end
@@ -53,16 +51,10 @@
 @synthesize maxHeight;
 @synthesize adID;
 
-
-
 +(TXSADViewEx*) infoADView
 {
     __block TXSADViewEx* basicADView=[[[TXSADViewEx alloc] init] autorelease];
-    
-//    basicADView.adView.backgroundImage=[UIImage imageNamed:@"pattern2.jpg"];
     basicADView.adView.spanWidthWeight=1.0f;
-    CGRect rect=[UIScreen mainScreen].bounds;
-    [basicADView.adView setFrame:CGRectMake(0, 0, rect.size.width, rect.size.height)];
     basicADView.adView.presentationAnimation=kADViewPresentationSlide;
     basicADView.customDismissedBlock=^{
         [TXSADViewEx setHasDismissedAD:basicADView.adID];
@@ -109,14 +101,8 @@
 {
     __block TXSADViewEx* basicADView=[[[TXSADViewEx alloc] init] autorelease];
     
-    //    basicADView.adView.backgroundImage=[UIImage imageNamed:@"pattern2.jpg"];
-    CGRect rect=[UIScreen mainScreen].bounds;
     basicADView.adView.spanWidthWeight=1.0f;
-    [basicADView.adView setFrame:CGRectMake(0, 0, rect.size.width, 200)];
     basicADView.adView.presentationAnimation=kADViewPresentationSlide;
-    basicADView.customDismissedBlock=^{
-        [TXSADViewEx setHasDismissedAD:basicADView.adID];
-    };
     return basicADView;
 }
 

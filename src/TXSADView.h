@@ -36,8 +36,8 @@ typedef enum _TXSADViewPresentationAnimation{
 
 -(void) show;
 -(void) show:(NSTimeInterval)duration;
-
--(void)dismiss;
+-(void) autoLayout;
+-(void) dismiss;
 
 @end
 

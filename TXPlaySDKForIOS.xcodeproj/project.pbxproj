@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		58013E341B1EFE5B007EC8BE /* UIView+TXSAnimations.h in Headers */ = {isa = PBXBuildFile; fileRef = 58013E321B1EFE5B007EC8BE /* UIView+TXSAnimations.h */; };
 		58013E351B1EFE5B007EC8BE /* UIView+TXSAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 58013E331B1EFE5B007EC8BE /* UIView+TXSAnimations.m */; };
+		580B34AB1B3D2ECC00138BB9 /* TXSADSplashView.h in Headers */ = {isa = PBXBuildFile; fileRef = 580B34A91B3D2ECC00138BB9 /* TXSADSplashView.h */; };
+		580B34AC1B3D2ECC00138BB9 /* TXSADSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 580B34AA1B3D2ECC00138BB9 /* TXSADSplashView.m */; };
 		581C3E321B259F890041774E /* TXSNetConnectionUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 581C3E301B259F890041774E /* TXSNetConnectionUtils.h */; };
 		581C3E331B259F890041774E /* TXSNetConnectionUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 581C3E311B259F890041774E /* TXSNetConnectionUtils.m */; };
 		581C3E3A1B2690560041774E /* TXSUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 581C3E381B2690560041774E /* TXSUtils.h */; };
@@ -44,6 +46,8 @@
 /* Begin PBXFileReference section */
 		58013E321B1EFE5B007EC8BE /* UIView+TXSAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TXSAnimations.h"; sourceTree = "<group>"; };
 		58013E331B1EFE5B007EC8BE /* UIView+TXSAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TXSAnimations.m"; sourceTree = "<group>"; };
+		580B34A91B3D2ECC00138BB9 /* TXSADSplashView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXSADSplashView.h; sourceTree = "<group>"; };
+		580B34AA1B3D2ECC00138BB9 /* TXSADSplashView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXSADSplashView.m; sourceTree = "<group>"; };
 		581C3E301B259F890041774E /* TXSNetConnectionUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXSNetConnectionUtils.h; sourceTree = "<group>"; wrapsLines = 0; };
 		581C3E311B259F890041774E /* TXSNetConnectionUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXSNetConnectionUtils.m; sourceTree = "<group>"; };
 		581C3E381B2690560041774E /* TXSUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXSUtils.h; sourceTree = "<group>"; };
@@ -177,6 +181,8 @@
 				58FEF7A21B2EDAE00007B77E /* TXSADViewEx.m */,
 				588FAC161B2E830E001B5202 /* TXSADView.h */,
 				588FAC171B2E830E001B5202 /* TXSADView.m */,
+				580B34A91B3D2ECC00138BB9 /* TXSADSplashView.h */,
+				580B34AA1B3D2ECC00138BB9 /* TXSADSplashView.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -210,6 +216,7 @@
 				581C3E321B259F890041774E /* TXSNetConnectionUtils.h in Headers */,
 				58013E341B1EFE5B007EC8BE /* UIView+TXSAnimations.h in Headers */,
 				58FEF7A31B2EDAE00007B77E /* TXSADViewEx.h in Headers */,
+				580B34AB1B3D2ECC00138BB9 /* TXSADSplashView.h in Headers */,
 				589A9CFC1B2AB51900D72815 /* TXSADInfoDelegate.h in Headers */,
 				587CEDFA1B1D7951008B3ACE /* TXPlaySDKForIOS.h in Headers */,
 			);
@@ -312,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				589A9CDE1B28142500D72815 /* TXSLoader.m in Sources */,
+				580B34AC1B3D2ECC00138BB9 /* TXSADSplashView.m in Sources */,
 				581C3E3B1B2690560041774E /* TXSUtils.m in Sources */,
 				58013E351B1EFE5B007EC8BE /* UIView+TXSAnimations.m in Sources */,
 				589A9CFD1B2AB51900D72815 /* TXSADInfoDelegate.m in Sources */,
@@ -434,6 +442,7 @@
 		587CEE0B1B1D7951008B3ACE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -449,6 +458,7 @@
 		587CEE0C1B1D7951008B3ACE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;

@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 xingQian. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 typedef struct _tx_play_callback{
     __unsafe_unretained id owner;
     SEL selector;
@@ -15,5 +15,6 @@ typedef struct _tx_play_callback{
 @interface TXSUtils : NSObject
 
 +(NSString*)md5:(NSString*)sourceStr;
++(UIImage*)  OriginImage:(UIImage *)image   scaleToSize:(CGSize)size;
 
 @end

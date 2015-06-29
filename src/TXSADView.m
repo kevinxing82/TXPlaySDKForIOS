@@ -9,6 +9,7 @@
 #import "TXSADView.h"
 #import "UIView+TXSAnimations.h"
 #import <QuartzCore/QuartzCore.h>
+#import "TXSUtils.h"
 
 @interface TXSADView ()
 
@@ -76,17 +77,24 @@
 {
     if (!buttonDismiss) {
         CGFloat yOffset=0.0f;
+        CGFloat xOffset=0.0f;
         
         if (self.orientation==kADViewOrientationTop) {
-            yOffset=40.0f;
+            yOffset=10.0f;
+            xOffset=self.frame.size.width-20.0f;
         }
         else if (self.orientation==kADViewOrientationBottom)
         {
-            yOffset=0.0f;
+            yOffset=5.0f;
+            xOffset=self.frame.size.width-20.0f;
+        }else if (self.orientation==kADViewOrientationCenter)
+        {
+            yOffset=5.0f;
+            xOffset=self.frame.size.width-20.0f;
         }
         
-        buttonDismiss=[[UIButton alloc] initWithFrame:CGRectMake(self.frame.size.width-20, 5+yOffset, 16, 16)];
-        buttonDismiss.autoresizingMask=UIViewAutoresizingFlexibleLeftMargin;
+        buttonDismiss=[[UIButton alloc] initWithFrame:CGRectMake(xOffset,yOffset, 16, 16)];
+//        buttonDismiss.autoresizingMask=UIViewAutoresizingFlexibleLeftMargin;
         [buttonDismiss setImage:[UIImage imageNamed:@"closeBtn_black"] forState:UIControlStateNormal];
         [buttonDismiss addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:buttonDismiss];
@@ -111,9 +119,8 @@
         
         pageControl=[[UIPageControl alloc] initWithFrame:CGRectMake(0, yOffset, self.frame.size.width, 36)];
         pageControl.autoresizingMask=UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin;
-        pageControl.hidesForSinglePage=NO;
-        [pageControl setBackgroundColor:[UIColor greenColor]];
-        
+        pageControl.hidesForSinglePage=YES;
+        [pageControl setBackgroundColor:[UIColor clearColor]];
         [pageControl addTarget:self action:@selector(changePage:) forControlEvents:UIControlEventValueChanged];
         [self addSubview:pageControl];
     }
@@ -146,19 +153,16 @@
     return scrollViewPages;
 }
 
+#pragma mark -Publish
 -(void)show
 {
     CGRect oldFrame=self.frame;
     CGRect screenSize=[UIScreen mainScreen].bounds;
-//    self.frame=CGRectMake(0, 0, screenSize.size.width, 200);
     
     [self createSubviews];
     
-//    self.frame=oldFrame;
-    
     CGRect parentFrame=self.superview.bounds;
     
-//    CGFloat height=self.maximumHeight;
     CGFloat height=screenSize.size.height;
     CGFloat width =parentFrame.size.width* spanWidthWeight;
     CGFloat margin=(parentFrame.size.width-width)/2.0f;
@@ -260,6 +264,51 @@
     [self show];
 }
 
+-(void)autoLayout
+{
+    CGFloat yOffset=0.0f;
+    CGFloat xOffset=0.0f;
+    if (buttonDismiss) {
+        if (self.orientation==kADViewOrientationTop) {
+            yOffset=10.0f;
+            xOffset=self.frame.size.width-20.0f;
+        }
+        else if (self.orientation==kADViewOrientationBottom)
+        {
+            yOffset=5.0f;
+            xOffset=self.frame.size.width-20.0f;
+        }else if (self.orientation==kADViewOrientationCenter)
+        {
+            yOffset=5.0f;
+            xOffset=self.frame.size.width-20.0f;
+        }
+        
+        [buttonDismiss setFrame: CGRectMake(xOffset,yOffset, 16, 16)];
+    }
+    if(pageControl){
+        if(self.orientation==kADViewOrientationTop)
+        {
+            yOffset=10.0f;
+        }
+        else if (self.orientation==kADViewOrientationBottom)
+        {
+            yOffset=0.0f;
+        }
+        
+        [pageControl setFrame:CGRectMake(0, yOffset, self.frame.size.width, 36)];
+    }
+    if (scrollViewPages) {
+        if (self.orientation==kADViewOrientationTop) {
+            yOffset=10.0f;
+        }
+        else if (self.orientation==kADViewOrientationBottom)
+        {
+            yOffset=0.0f;
+        }
+        [scrollViewPages setFrame:CGRectMake(0, yOffset, self.frame.size.width, self.frame.size.height)];
+    }
+}
+
 -(void)dismiss
 {
     if (self.isDismssing) {
@@ -317,11 +366,34 @@
             [self animationBounceOutWithDirection:kTXSAnimationTop boundaryView:self.superview duration:0.3 delegate:self startSelector:nil stopSelector:@selector(dismissAnimationCompleted)];
         }
     }
+    else if(self.orientation==kADViewOrientationCenter)
+    {
+    if (self.presentationAnimation==kADViewPresentationSlide) {
+        [self animationSlideOutWithDirection:kTXSAnimationTop boundaryView:self.superview duration:0.3 delegate:self startSelector:nil stopSelector:@selector(dismissAnimationCompleted)];
+    }
+    else if (self.presentationAnimation==kADViewPresentationFade)
+        {
+        [self animationFadeOutWithDuration:0.3 delegate:self startSelector:nil stopSelector:@selector(dismissAnimationCompleted)];
+        }
+    else if (self.presentationAnimation==kADViewPresentationDrop)
+        {
+        [self animationDropOutWithDuration:0.3 delegate:self startSelector:nil stopSelector:@selector(dismissAnimationCompleted)];
+        }
+    else if (self.presentationAnimation==kADViewPresentationSwirl)
+        {
+        [self animationSwirlOutWithDuration:0.7 delegate:self startSelector:nil stopSelector:@selector(dismissAnimationCompleted)];
+        }
+    else if (self.presentationAnimation==kADViewPresentationBounce)
+        {
+        [self animationBounceOutWithDirection:kTXSAnimationTop boundaryView:self.superview duration:0.3 delegate:self startSelector:nil stopSelector:@selector(dismissAnimationCompleted)];
+        }
+    }
 }
 
+#pragma mark -Private
 -(void) dismissAnimationCompleted
 {
-    if(self.delegate &&[self.delegate respondsToSelector:@selector(dismissADView:)]){
+    if(self.delegate &&[self.delegate respondsToSelector:@selector(dismissedADView:)]){
         [self.delegate dismissedADView:self];
     }
     
@@ -347,6 +419,19 @@
             
             if(pageContent)
             {
+                CGSize screenSize=[UIScreen mainScreen].bounds.size;
+                if (pageContent.size.width>pageContent.size.height) {
+                    if (pageContent.size.width>screenSize.width) {
+                        pageContent=[TXSUtils OriginImage:pageContent scaleToSize:CGSizeMake(screenSize.width, pageContent.size.height*screenSize.width/screenSize.height)];
+                        scrollViewPages.frame=CGRectMake(0, 10, pageContent.size.width, pageContent.size.height);
+                    }
+                }
+                else
+                {
+                    if(pageContent.size.height>screenSize.height){
+                        
+                    }
+                }
                 UIImageView* imageViewPage=[[[UIImageView alloc] initWithFrame:CGRectMake(page*self.scrollViewPages.bounds.size.height+5,0,self.scrollViewPages.bounds.size.width-10,self.scrollViewPages.bounds.size.height-scrollIndicatorOffset)] autorelease];
                 imageViewPage.image=pageContent;
                 imageViewPage.contentMode=UIViewContentModeCenter;
